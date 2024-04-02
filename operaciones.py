@@ -21,7 +21,14 @@ if (opc == 1):
   print("Fecha", datetime.now())
   print("-------------------------")
 elif (opc == 2):
-  pass
+  name = input("Ingrese nombre del cliente: ")
+  numero = input("Ingrese su numero de telefono: ")
+  print("-------------------------")
+  print("Datos registrados:")
+  print("Nombre:", name)
+  print("Teléfono:", numero)
+  print("Fecha", datetime.now())
+  print("-------------------------")
 elif (opc == 3):
   continuar = "si"
   names = list()
