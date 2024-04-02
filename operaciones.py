@@ -11,7 +11,15 @@ while (opc < 1 or opc > 4):
     opc = int(input("Ingrese el número:"))
 
 if (opc == 1):
-  pass
+  name = input("Ingrese nombre del producto:")
+  precio = float(input("Ingrese el precio del producto unitario:"))
+  cant = int(input("Ingrese la cantidad vendida:"))
+  print("-------------------------")
+  print("Registro de venta:")
+  print(name + " x", cant)
+  print("Total: ", precio * cant)
+  print("Fecha", datetime.now())
+  print("-------------------------")
 elif (opc == 2):
   pass
 elif (opc == 3):
