@@ -46,4 +46,18 @@ elif (opc == 3):
     print(names[i], "--->", areas[i])
   print("-------------------------")
 elif(opc == 4):
-  pass
+  continuar = "si"
+  names = list()
+  cants = list()
+  while (continuar == "si"):
+    name = input("Ingrese el nombre del producto: ")
+    names.append(name)
+    cant = int(input("Ingrese la cantidad: "))
+    cants.append(cant)
+    continuar = input("¿Producir otro producto? (si/no): ")
+
+  print("-------------------------")
+  print("Producto en cola para producción:")
+  for i in range(len(names)):
+    print(names[i], "x", cants[i])
+  print("-------------------------")
