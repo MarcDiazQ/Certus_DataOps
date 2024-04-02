@@ -23,6 +23,20 @@ if (opc == 1):
 elif (opc == 2):
   pass
 elif (opc == 3):
-  pass
+  continuar = "si"
+  names = list()
+  areas = list()
+  while (continuar == "si"):
+    name = input("Ingrese el nombre del personal: ")
+    names.append(name)
+    area = input("Ingrese el area asignada: ")
+    areas.append(area)
+    continuar = input("¿Desea llamar a otro personal? (si/no): ")
+
+  print("-------------------------")
+  print("Personal asignado a nueva area:")
+  for i in range(len(names)):
+    print(names[i], "--->", areas[i])
+  print("-------------------------")
 elif(opc == 4):
   pass
